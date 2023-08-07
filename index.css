@@ -339,6 +339,10 @@ body {
   border-radius: 12px;
 }
 
+.ineedcontentbox:last-child {
+  margin-right: 15px;
+}
+
 .ineedbigtext {
   font-family: Avenir Next LT Pro;
   font-size: 24px;
@@ -463,13 +467,13 @@ body {
   margin-left: 16px;
   margin-top: 21px;
   height: 149px;
-  width: 307px;
+  width: 270px;
 }
 
 .quotestestimonial {
   position: absolute;
   top: 0;
-  margin-top: 36px;
+  margin-top: 0px;
   margin-left: 27px;
 }
 
@@ -477,8 +481,8 @@ body {
   text-transform: capitalize;
   width: 250px;
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 45%;
+  left: 54%;
   transform: translate(-50%, -50%);
   font-family: Poppins;
   font-size: 17px;
@@ -507,7 +511,7 @@ body {
   display: flex;
   position: absolute;
   right: 0;
-  top: 35%;
+  top: 25%;
   transform: translate(-50%, -50%);
   margin-right: -16px;
 }
@@ -535,7 +539,6 @@ body {
 
 .testcardsslider {
   display: flex;
-  gap: 12px;
   overflow-y: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -543,4 +546,12 @@ body {
 
 .testcardsslider::-webkit-scrollbar {
   display: none;
+}
+
+.card {
+  position: relative;
+}
+
+.card:last-child {
+  margin-right: 15px;
 }
