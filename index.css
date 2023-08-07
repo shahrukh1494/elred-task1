@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+  color: #ffffff;
+  margin: auto;
+}
+
+.header {
+  font-family: Work Sans;
+  background-color: #696969;
+  padding: 8px 16px;
+}
+
+.contents {
+  background-image: url("/Rectangle4301.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 21px 40px 21px;
+}
+
+.userdetails {
+  display: flex;
+  flex-direction: column;
+  padding-top: 67px;
+}
+
+.username {
+  font-family: Avenir Next LT Pro;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  padding: 10px 0;
+}
+
+.profiledesignation {
+  display: flex;
+  margin-left: -4px;
+}
+
+.designation {
+  font-family: Avenir Next LT Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.location {
+  margin: 4px 0;
+}
+
+.locationtext {
+  font-family: Avenir Next LT Pro;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.frame {
+  border: 2px solid #c5c5c5;
+  border-radius: 2px;
+  margin-left: 11px;
+  margin-top: 77px;
+  margin-bottom: 23px;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  margin: 3px 0 15px 0;
+  padding: 13px 0 12px 0;
+  border: 1px, 0px, 1px, 0px;
+  border-radius: 12px;
+  background: #ffffff33;
+  box-shadow: 0px 2px 16px 0px #0000001a;
+  backdrop-filter: blur(8px);
+}
+
+.features {
+  border: 1px, 0px, 1px, 0px;
+  border-radius: 12px;
+  background: #ffffff33;
+  box-shadow: 0px 2px 16px 0px #0000001a;
+  backdrop-filter: blur(8px);
+  padding: 20px 16px 16px 16px;
+  margin-bottom: 15px;
+}
+
+.featuretoptext {
+  font-family: Avenir Next LT Pro;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icanoffertext {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.seealltext {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.imagescontainer {
+  margin-top: 17px;
+  display: flex;
+  gap: 12px;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.slideimage {
+  border-radius: 12px;
+}
+
+.imagescontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderimage {
+  margin: 0;
+}
+
+.imgslidetext {
+  position: relative;
+  font-family: Avenir Next LT Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.imglocationtext {
+  position: absolute;
+  bottom: 72px;
+  left: 30px;
+  font-family: Avenir Next LT Pro;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.imglocationicon {
+  position: absolute;
+  bottom: 72px;
+  left: 12px;
+  margin-bottom: 3px;
+}
+
+.imagebottomtext {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.ratingscontainer {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  padding: 13px 16px 13px 16px;
+  border: 1px, 0px, 1px, 0px;
+  border-radius: 12px;
+  background: #ffffff33;
+  box-shadow: 0px 2px 16px 0px #0000001a;
+  backdrop-filter: blur(8px);
+}
+
+.ratingstext {
+  font-family: Avenir Next LT Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.ratingslist {
+  padding: 13px 7px 15px 10px;
+  font-family: Avenir Next LT Pro;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.ratingsnumber {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.ratingstextdesc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.rating {
+  display: flex;
+  gap: 31px;
+}
+
+.rating:not(:last-child) {
+  border-bottom: 1px solid white;
+  padding-bottom: 14px;
+}
+
+.starimg {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: -20px;
+}
+
+.superskills {
+  display: flex;
+  justify-content: space-between;
+  border: 1px, 0px, 1px, 0px;
+  border-radius: 12px;
+  background: #ffffff33;
+  box-shadow: 0px 2px 16px 0px #0000001a;
+  backdrop-filter: blur(8px);
+  padding-right: 12px;
+  margin-bottom: 15px;
+}
+
+.skillstextcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 0;
+}
+
+.skillstext {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.nooftraits {
+  font-family: Avenir Next LT Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.skilsimg {
+  margin: 12px;
+  height: 68px;
+  width: 68px;
+}
+
+.skillsimagetext {
+  display: flex;
+}
+
+.arrowright {
+  width: 24px;
+  height: 23px;
+  margin-top: 33px;
+  cursor: pointer;
+}
+
+.biocontainer {
+  display: flex;
+  justify-content: center;
+  border: 1px, 0px, 1px, 0px;
+  border-radius: 12px;
+  background: #ffffff33;
+  box-shadow: 0px 2px 16px 0px #0000001a;
+  backdrop-filter: blur(8px);
+  margin-bottom: 15px;
+  padding: 12px 0 14px 0;
+}
+
+.biotext {
+  font-family: Avenir Next LT Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.bioback {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.ineedcontainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px, 0px, 1px, 0px;
+  border-radius: 12px;
+  background: #ffffff33;
+  box-shadow: 0px 2px 16px 0px #0000001a;
+  backdrop-filter: blur(8px);
+  margin-bottom: 15px;
+}
+
+.ineeedtextcontainer {
+  padding: 13px 16px;
+  font-family: Avenir Next LT Pro;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ineedtext {
+  font-family: Avenir Next LT Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.019em;
+}
+
+.ineedcontentbox {
+  display: flex;
+  flex-direction: column;
+  min-width: 270px;
+  gap: 10px;
+  margin: 0 0 13px 13px;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+}
+
+.ineedbigtext {
+  font-family: Avenir Next LT Pro;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.019em;
+  text-align: left;
+}
+
+.ineedsmalltext {
+  font-family: Avenir Next LT Pro;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.019em;
+  text-align: left;
+}
+
+.ineedcontentcontainer {
+  display: flex;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.ineedcontentcontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.commentsheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentscontainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px, 0px, 1px, 0px;
+  border-radius: 12px;
+  background: #ffffff33;
+  box-shadow: 0px 2px 16px 0px #0000001a;
+  backdrop-filter: blur(8px);
+  margin-bottom: 15px;
+  padding: 16px;
+}
+
+.comment {
+  display: flex;
+  padding: 22px 57px 0 0;
+}
+
+.commentstext {
+  font-family: Avenir Next LT Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.commenttext {
+  font-family: Avenir Next LT Pro;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 8px;
+}
+
+.commentimg {
+  height: 42px;
+  width: 42px;
+}
+
+.commentsscrollcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.commentsscrollcontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.commentime .commentlikes {
+  padding-top: 6px;
+  font-family: Avenir Next LT Pro;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.commentlikes {
+  padding-left: 10px;
+}
