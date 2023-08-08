@@ -4,9 +4,11 @@
     <title>Task 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="toaster.css" />
   </head>
   <body>
     <div class="container">
+      <div id="snackbar">Feature coming soon</div>
       <div class="header">Profile</div>
       <div class="contents">
         <div class="userdetails">
@@ -52,7 +54,7 @@
         <div class="features">
           <div class="featuretoptext">
             <span class="icanoffertext">I can offer</span
-            ><span class="seealltext">See all</span>
+            ><span class="seealltext" onClick="showToaster()">See all</span>
           </div>
           <div class="imagescontainer">
             <!-- first image -->
@@ -187,7 +189,7 @@
         <div class="testimonialscontainer">
           <div class="testimoniasheader">
             <span class="testimonialstext">Testimonals</span
-            ><span class="seealltext">See all</span>
+            ><span class="seealltext" onClick="showToaster()">See all</span>
           </div>
           <div class="testcardsslider">
             <!-- card 1 -->
@@ -336,17 +338,27 @@
               <div class="nooftraits">4 traits</div>
             </div>
           </div>
-          <img src="ic_back.svg" alt="arrow right" class="arrowright" />
+          <img
+            src="ic_back.svg"
+            alt="arrow right"
+            class="arrowright"
+            onClick="showToaster()"
+          />
         </div>
         <div class="biocontainer">
-          <div class="biotext">My bio</div>
-          <img src="ic_back.svg" alt="back icon" class="bioback" />
+          <div class="biotext" onClick="showToaster()">My bio</div>
+          <img
+            src="ic_back.svg"
+            alt="back icon"
+            class="bioback"
+            onClick="showToaster()"
+          />
         </div>
 
         <div class="ineedcontainer">
           <div class="ineeedtextcontainer">
             <span class="ineedtext">I need</span
-            ><span class="seealltext">See all</span>
+            ><span class="seealltext" onClick="showToaster()">See all</span>
           </div>
           <div class="ineedcontentcontainer">
             <!-- first box -->
@@ -383,7 +395,7 @@
         <div class="commentscontainer">
           <div class="commentsheader">
             <span class="commentstext">Comments</span>
-            <span class="seealltext">See all</span>
+            <span class="seealltext" onClick="showToaster()">See all</span>
           </div>
           <div class="commentsscrollcontainer">
             <!-- first comment -->
@@ -461,10 +473,21 @@
           </div>
           <div class="viewmorereplies">
             <div class="border"></div>
-            <div class="viewmoretext">View 2 more replies</div>
+            <div class="viewmoretext" onClick="showToaster()">
+              View 2 more replies
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      function showToaster() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
+    </script>
   </body>
 </html>
